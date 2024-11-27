@@ -242,7 +242,7 @@ body{
   .shop-now-btn:hover i {
     transform: translateX(5px); 
   }*/
-  .product-section{
+.product-section{
     margin-top: 30px;
     background-color: #962d39;
     padding-top:20px;
@@ -286,8 +286,12 @@ body{
 
 /* Default: Desktop - 4 items per row */
 .product-box {
-    flex-basis: 20%; /* Four items per row */
+   /* flex-basis: 20%; /* Four items per row */
     align-items: center;
+    
+      flex-basis: 22%; /* Slightly below 25% to account for gap */
+      box-sizing: border-box;
+  
 }
 
 .product-box img {
@@ -324,23 +328,31 @@ body{
     transform: translateX(5px);
 }
 
-/* Mobile view */
-@media screen and (max-width: 700px) {
-    .products {
-        justify-content: center; /* Center align items */
-    }
+/*Mobile view*/ 
+/* Default: Large screens (Desktop) - 4 items per row */
+.product-box {
+  flex: 0 1 calc(25% - 20px); /* Four items per row, accounting for gaps */
+  box-sizing: border-box;
+}
 
-    .product-box {
-        flex-basis: 90%; /* Make each item take up almost the full width on mobile */
-    }
+/* Medium screens: 2 items per row (Between 1122px and 575px) */
+@media screen and (min-width: 956px) and (max-width: 1301px) {
+  .product-box {
+      flex: 0 1 calc(50% - 20px);  /* Two items per row */
+  }
+}
 
-    .shop-now-btn {
-        width: 100%; /* Make the button take full width on small screens */
-    }
+/* Mobile view: 1 item per row */
+@media screen and (max-width: 575px) {
+  .product-box {
+      flex: 0 1 100%;  /* Full width for mobile view */
+      max-width: 100%;  /* Ensures no extra margin */
+  }
 }
 
 
-  
+/* Container settings */
+
 
 
 .contact {
@@ -399,11 +411,12 @@ body{
     width: 30%;
     display: block; /* Makes the button a block element */
     margin: 0 auto; /* Centers the button horizontally */
+    box-sizing: border-box; /* Ensures padding doesn't overflow the width */
+
   }
+
   
-.buttons{
-   
-}
+
 
   .submit-btn:hover {
     background-color: #efb6bd;
@@ -419,14 +432,24 @@ body{
   }
   .form-group input{
     width:95%;
+    padding:10px;
   }
   .form-group textarea{
     width:95%;
+    padding:10px;
   }
-  .submit-btn{
-    width:auto%;
-    
-  }
+  @media screen and (max-width: 700px) {
+    .contact {
+        width: 90%; /* Make the contact form take more width on smaller screens */
+    }
+
+    .submit-btn {
+        width: 100%; /* Full width button on smaller screens */
+        padding: 12px 0; /* Adjust padding for better mobile display */
+    }
+}
+
+
 
 /*  Media Query*/
 /*@media screen and (max-width:700px)
