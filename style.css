@@ -352,6 +352,38 @@ body{
 
 
 /* Container settings */
+.container {
+  position: relative;             /* Make the container a positioning context for the h1 */
+  display: block;
+  width: 100%;                    /* Full width of the container */
+  height: 80vh;                   /* Set the height to a percentage of the viewport */
+  overflow: hidden;               /* Ensure the content doesn't overflow */
+  background-size: cover;         /* Ensure the background image covers the container */
+  background-position: center;    /* Center the background image */
+}
+
+.container h1 {
+  position: absolute;             /* Position the text relative to the container */
+  top: 50%;                       /* Center the text vertically */
+  left: 50%;                      /* Center the text horizontally */
+  transform: translate(-50%, -50%); /* Offset to truly center the text */
+  color: white;                   /* White text for contrast */
+  font-size: 5vw;                  /* Make the font size responsive to viewport width */
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  text-align: center;             /* Center the text inside the h1 */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 700px) {
+  .container {
+      height: 60vh;  /* Adjust the container height on smaller screens */
+  }
+
+  .container h1 {
+      font-size: 8vw;  /* Adjust font size on smaller screens */
+  }
+}
 
 
 
