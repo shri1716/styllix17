@@ -1,0 +1,489 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+body{
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+.background{
+    background-color:#efb6bd;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color:#962d39;
+    font-size: larger;
+    font-weight: bold;
+  
+}
+.navbar-links
+{
+    display:flex;
+    column-gap:20px;
+}
+
+
+.navbar-links a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    font-weight:600;
+}
+.navbar-links a:hover{
+    text-decoration:underline;
+    color:#1d232c;
+    
+}
+.navbar-menu-toggle{
+    display:none;
+
+}
+/*side-navbar*/
+.side-navbar
+{
+    background-color: #962d39;
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:-60%;
+    padding:20px;
+    color:white;
+    transition: 0.5s;
+}
+.side-navbar-link{
+    margin-bottom:30px;
+
+}
+.side-navbar-link a
+{
+    text-decoration:none;
+    color:white;
+}
+.side-navbar-link a:hover{
+    text-decoration:underline;
+}
+
+
+/*header*/
+.header{
+      display:flex;
+      justify-content: center;
+      gap:50px;
+      padding:50px;
+
+}
+
+.header-button
+{
+    margin-top:10px;
+    padding:20px;
+    background-color:#962d39;
+    color:black;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+}
+.service{
+    padding:20px;
+    
+}
+.service-container-1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.service-container-2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+.service-container-2
+{
+    border-radius:5px;
+    background-color: #f2f4f7;
+    padding:10px;
+    background-color:#962d39;
+}
+.new-arrival{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.new-arrival-container{
+    position:relative;
+    flex-basis:20%;
+}
+.new-arrival button{
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:5%;
+    padding-bottom:5%;
+    margin-top:10px;
+    color:#1d232c;
+    top:50%;
+    left:18%;
+    position:absolute;
+    border-radius:10px;
+    border:none;
+    
+}
+.news{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.news input{
+      padding:11px;
+      margin-bottom: 10px;
+      width:80vw;
+      border:solid black 3px;
+}
+.news button{
+    padding:10px;
+    margin-top: 10px;
+    background-color:#962d39;
+    color:black;
+    font-size: medium;
+    font-weight:600;
+    border-radius:20px ;
+}
+.footer{
+    margin-top:20px;
+    padding:40px;
+    background-color:#962d39;
+    color:black;
+    font-size:large;
+    font-weight:300;
+}
+/*
+.product-section
+{
+    margin-top:20px;
+}
+.product-search{
+    width:80%;
+    border:solid black 2px;
+    border-radius:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    margin:auto;
+}
+.product-search input{
+
+   background-color:transparent;
+   width:100%;
+
+}
+.product-search input:focus{
+    outline:none;
+}
+.products{
+    padding:20px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.product-box{
+    
+    flex-basis:20%;
+    align-items: center;
+
+}
+.product-box img{
+       border-radius:20px;
+}
+.shop-now-btn {
+    background-color: #963647; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top:20px;
+    margin-bottom: 20px;
+     
+  }
+
+  
+  .shop-now-btn i {
+    margin-left: 8px; 
+    transition: transform 0.3s ease; 
+  }
+
+  
+  .shop-now-btn:hover {
+    background-color:#963647; 
+    transform: scale(1.05); 
+  }
+
+  
+  .shop-now-btn:hover i {
+    transform: translateX(5px); 
+  }*/
+  .product-section{
+    margin-top: 30px;
+    background-color: #962d39;
+    padding-top:20px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin:auto;
+    padding-top:2px;
+    
+    
+}
+
+
+.product-section input{
+    border: none;
+    background-color: #962d39;
+    width: 100%;
+
+}
+
+.product-section input:focus{
+    outline:none;
+    
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Default: Desktop - 4 items per row */
+.product-box {
+    flex-basis: 20%; /* Four items per row */
+    align-items: center;
+}
+
+.product-box img {
+    border-radius: 20px;
+}
+
+.shop-now-btn {
+    background-color: white;
+    color:black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #962d39;
+    transform: scale(1.05);
+}
+
+.shop-now-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Mobile view */
+@media screen and (max-width: 700px) {
+    .products {
+        justify-content: center; /* Center align items */
+    }
+
+    .product-box {
+        flex-basis: 90%; /* Make each item take up almost the full width on mobile */
+    }
+
+    .shop-now-btn {
+        width: 100%; /* Make the button take full width on small screens */
+    }
+}
+
+
+  
+
+
+.contact {
+    background-color:#962d39;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Styling for form elements */
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 5px;
+    
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  /* Styling for the submit button */
+  /*.submit-btn {
+    background-color: white;
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    
+  }*/
+  .submit-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    display: block; /* Makes the button a block element */
+    margin: 0 auto; /* Centers the button horizontally */
+  }
+  
+.buttons{
+   
+}
+
+  .submit-btn:hover {
+    background-color: #efb6bd;
+  }
+  .contact h2{
+    margin-bottom: 20px;
+  }
+  .contact{
+    padding:20px;
+    width:60%;
+    margin-top:20px;
+    
+  }
+  .form-group input{
+    width:95%;
+  }
+  .form-group textarea{
+    width:95%;
+  }
+  .submit-btn{
+    width:auto%;
+    
+  }
+
+/*  Media Query*/
+/*@media screen and (max-width:700px)
+{
+    .navbar-menu-toggle{
+        display:block;
+    }
+    .navbar-link
+    {
+        display:none;
+    }
+    .header-image
+    {
+        display:none;
+    }
+    .service-container-1{
+        display:none;
+    }
+    .service-container-2{
+        flex-direction:column;
+    }
+*/
+    
+
+@media screen and (max-width: 700px) {
+  /* For the navbar toggle button, make it visible on smaller screens */
+  .navbar-menu-toggle {
+    display: block; /* Show the menu toggle button */
+  }
+
+  /* Hide navbar links on smaller screens */
+  .navbar-link {
+    display: none; /* Hide individual navbar links */
+  }
+
+  /* Hide the header image on smaller screens */
+  .header-image {
+    display: none; /* Hide the header image */
+  }
+
+  /* Hide the first service container on smaller screens */
+  .service-container-1 {
+    display: none; /* Hide this section */
+  }
+
+  /* For the second service container, arrange items vertically on smaller screens */
+  .service-container-2 {
+     /* Make it a flex container */
+    flex-direction: column; /* Stack elements vertically */
+  }
+}
+
+
+
+
+
+
+
+
+  
